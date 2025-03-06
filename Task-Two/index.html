@@ -19,6 +19,14 @@
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label>
         <br>
+        <label for="interests">Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label>
+        <br>
         <label for="date of birth">Date of birth:</label>
         <input type="date" id="date of birth" name="date of birth" placeholder="dd/mm/yy"><br>
         <label for="next of kin">Next of Kin:</label>
@@ -27,6 +35,16 @@
         <input type="email" id="email" name="email" placeholder="Enter your email"><br>
         <label for="phone number">Phone Number:</label>
         <input type="tel" id="phone number" name="phone number" placeholder="Enter your phone number"><br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="disabled selected">Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="jamaica">Jamaica</option>
+            <option value="south africa">South Africa</option>
+        </select><br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" placeholder="Write your message"></textarea><br>
         <button type="submit" value="Submit">Submit</button>
      </form>
 </body>
