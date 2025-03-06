@@ -10,7 +10,53 @@
     <!--Adding audio files to a document-->
     <h2>Embedded Audio</h2>
     <audio controls>
-        <source src="Die With a Smile - Lady Gaga, Bruno Mars - (Lyrics).mp3">
+        <source src="Die With a Smile - Lady Gaga, Bruno Mars - (Lyrics).mp3" type="audio/mpeg">
     </audio>
+    <h1>Embedded Video</h1>
+    <!--Adding video files to a document-->
+    <video width="500" controls poster="pexels-markus-winkler-1430818-4836103.jpg">
+        <source src="Die With a Smile - Lady Gaga, Bruno Mars - (Lyrics).mp3" type="video/mp4">
+    </video>
+    <h2>HTML Tables</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Nationality</th>
+            <th>Gender</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr>
+            <th>Grace</th>
+            <th>25</th>
+            <th>Jamaican</th>
+            <th>Female</th>
+            <th>0723764980</th>
+        </tr>
+        <tr>
+            <td colspan="5">Merged column</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Merged rows</td>
+            <td>Data 1</td>
+        </tr>
+        <tr>
+            <td>Data 2</td> 
+        </tr>
+        <tr>
+            <td>Data 3</td>
+        </tr>
+    </table>
+    <!-- Creating Forms -->
+     <h2>HTML Forms</h2>
+     <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <button type="submit" value="Submit">Submit</button>
+     </form>
 </body>
 </html>
