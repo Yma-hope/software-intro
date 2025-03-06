@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Form</title>
+</head>
+<body>
+    <!-- Creating a medical form -->
+    <h2>Medical Form</h2>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age"><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+        <label for="date of birth">Date of birth:</label>
+        <input type="date" id="date of birth" name="date of birth" placeholder="dd/mm/yy"><br>
+        <label for="next of kin">Next of Kin:</label>
+        <input type="text" id="next of kin" name="next of kin" placeholder="Name of next of kin"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+        <label for="phone number">Phone Number:</label>
+        <input type="tel" id="phone number" name="phone number" placeholder="Enter your phone number"><br>
+        <button type="submit" value="Submit">Submit</button>
+     </form>
+</body>
+</html>
