@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    background-color:rgb(235, 251, 221);
+    color: #000000;
+}
+
+header {
+    text-align:center;
+}
+
+.navbar {
+    background-color:rgb(182, 239, 193);
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li{
+    display: inline-block;
+    position: relative;
+}
+/*Color of links on Navbar*/
+.nav-links li a{
+    color:rgb(149, 156, 250);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+/*Underline Effect*/
+.nav-links li a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0; height: 2px;
+    background: whitesmoke;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+/*Hover Effect*/
+.nav-links li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+#mission {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
