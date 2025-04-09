@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    line-height: 1.6;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;/*Prevents content from hiding under the nav bar*/
+}
+
+/* Fixed Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #e9aaf7;
+    padding: 15px 30px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/* Underline Nav-links on hover with the center out effect */
+.nav-links a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;/* adjusts the position of the underline*/
+    width: 0;
+    height: 2px;
+    background-color: #f04;
+    transition: width 0.3s ease-in-out left 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left:0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#hero {
+    background: url("assets/U.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff ;
+    text-align: center;
+}
+
+/*Alpha is used for opacity...0 being the most transparent and 1 being the most opaque */
+.hero-content {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e9aaf7;
+    color: black;
+    border-radius: 8px;/*to round the buttons*/
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/*Main Section*/
+main {
+    display: flex;
+    padding: 40px 20px;/*forces inside of a container to expand...adds space inside a container*/
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;/*margin top adds space between containers*/
+}
+
+.service-card {
+    background: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    transition: transform 0.3s ease-in-out, box shadow 0.3s ease-in-out;
+}
+/*Card hover effect*/
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: #a5a4a4;
+    cursor: pointer;
+    color: #fff;
+}
+ /*Contact Section*/
+ .contact h2 {
+    margin-top: 20px;
+ }
+
+ form {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+ }
+
+ input textarea {
+    width: 100%;
+    padding: 10px;
+    color: darkmagenta;
+    margin: 5px 0;
+    border: 1px solid;
+    border-radius: 8px;
+ }
+
+ button {
+    width: 40%;
+    padding: 10px;
+    background: #e9aaf7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+ }
+
+ button:hover {
+    background: lightblue;
+ }
+
+ footer {
+    display: flex;
+    background: #29152e;
+    padding: 10px 5px;
+    color: #eee;
+    height: 70vh;
+    gap: 5px;
+    border-radius: 8px;
+    margin: 10px 5px;
+ }
+
+ .footer.column {
+    display: flex;
+ }
+
+ .footer-bottom {
+    display: flex;
+    justify-content: baseline;
+    position: absolute;
+    bottom: 0px;
+ }
