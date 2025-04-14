@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory Manager</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background-color: #f7bae9;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #efc9e8;
+      border-radius: 8px;
+      background-color: #efc9e8;
+    }
+
+    input, button {
+      margin: 5px 0;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #e22973;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e34bbd;
+    }
+
+    #output {
+      white-space: pre-line;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Inventory Manager</h1>
+
+  <div class="section">
+    <h3>Add Item</h3>
+    <input type="text" id="itemName" placeholder="Item name" />
+    <input type="number" id="itemQty" placeholder="Quantity" />
+    <button onclick="handleAddItem()">Add Item</button>
+  </div>
+
+  <div class="section">
+    <h3>Remove Item(s)</h3>
+    <input type="text" id="removeNames" placeholder="Item name(s), comma-separated" />
+    <button onclick="handleRemoveItems()">Remove Item(s)</button>
+  </div>
+
+  <div class="section">
+    <h3>Filter Items by Quantity</h3>
+    <input type="number" id="minQty" placeholder="Minimum quantity" />
+    <button onclick="handleFilter()">Filter</button>
+  </div>
+
+  <div class="section">
+    <h3>Summary</h3>
+    <button onclick="handleSummary()">Show Inventory Summary</button>
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
